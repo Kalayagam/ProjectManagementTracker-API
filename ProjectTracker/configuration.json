@@ -1,0 +1,79 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/manager/list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55781
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/manager/list",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/manager/list/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55781
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/manager/list/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/manager/AddMember",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55781
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/manager/AddMember",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/manager/assigntask",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55781
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/manager/assigntask",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/manager/update/{allocation}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55781
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/manager/update/{allocation}",
+      "UpstreamHttpMethod": [ "PATCH" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/member/list/{memberId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 55791
+        }
+      ],
+      "UpstreamPathTemplate": "/projectmgmt/api/v1/member/list/{memberId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ]
+  }
+
